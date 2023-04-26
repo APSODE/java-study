@@ -19,7 +19,7 @@ public class ExamPrepare5 {
                 System.out.print("*");
             }
 
-            System.out.print(" ");
+            System.out.print("   ");
 
             int second_star_amount = 2 * line_amount - first_star_amount;
 
