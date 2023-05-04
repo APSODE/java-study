@@ -37,7 +37,7 @@ public class Practicce1 {
                     int[] product_amount = new int[10];
                     for (int stroage_idx : product_storage) {
                         if (stroage_idx != 0) {
-                            product_amount[stroage_idx - 1] += 1;
+                            product_amount[stroage_idx - 1]++;
                         }
                     }
 
