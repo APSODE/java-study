@@ -48,6 +48,16 @@ public class Practice3 {
                 int row = sc.nextInt();
                 int column = sc.nextInt();
 
+                // 입력 받은 row와 column의 값이 게임판의 범위를 벗어나는 경우
+                if (row >= 3 || column >= 3 || row <= -1 || column <= -1) {
+                    System.out.println("(" + row + ", " + column + ")은 입력 가능한 값을 벗어났습니다. 다시 입력하여주십시오.");
+
+                    // 턴 확인에서 이미 증가된 값 1 감소
+                    game_turn--;
+
+                    continue;
+                }
+
                 // 해당 칸이 빈칸인지 확인하는 변수
                 boolean isEmpty = tic_tac_toe[row][column] == '\u0000';
 
