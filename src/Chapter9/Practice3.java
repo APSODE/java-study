@@ -56,6 +56,8 @@ public class Practice3 {
                     tic_tac_toe[row][column] = current_turn_user == '흑' ? 'X' : 'O';
                 } else {
                     System.out.println("(" + row + ", " + column + ")는 빈칸이 아닙니다. 다시 입력하여 주십시오.");
+                    // 턴 확인에서 이미 증가된 값 1 감소
+                    game_turn--;
                 }
             }
         }
