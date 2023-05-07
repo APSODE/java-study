@@ -33,8 +33,8 @@ public class Practice3 {
                     }
 
 
-                    // 승부를 결정지을수 없는 상태에서 게임판에 빈칸이 존재하지 않는 경우
-                } else if (blank_check) {
+                // 승부를 결정지을수 없는 상태에서 게임판에 빈칸이 존재하지 않는 경우
+                } else {
                     System.out.println("흑과 백의 무승부입니다!");
                 }
                 running_status = false;
