@@ -18,7 +18,7 @@ public class Practice3 {
             boolean winner_is_black = isWinner('X', tic_tac_toe);
             boolean winner_is_white = isWinner('O', tic_tac_toe);
 
-            // tic_tac_toe 배열에 빈칸이 존재하는지 확인
+            // tic_tac_toe 배열에 빈칸이 존재하는지 확인 -> 빈칸이 있는 경우 false, 없는 경우 true여야 하므로 !를 사용함
             boolean blank_check = !(remainBlankCheck(tic_tac_toe));
 
             // 게임 중지 확인
