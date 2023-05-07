@@ -142,6 +142,7 @@ public class Practice3 {
             // 입력으로 받은 승리 판정 확인 대상과 같다면 check_result를 true로 변경
             if (isAllTheSame && ttt_game_data[0] == user_character) {
                 check_result = true;
+                break;
             }
         }
 
