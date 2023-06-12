@@ -22,6 +22,7 @@ public class Practice5 {
                     int input_product_location = sc.nextInt() - 1;
                     product_storage[input_product_id][input_product_location]++;
                 }
+
                 case ('o') -> {
                     System.out.print("물품 번호 (0 ~ 99)와 저장 위치(1 ~ 10)를 같이 입력하시오. : ");
                     int input_product_id = sc.nextInt();
@@ -33,6 +34,7 @@ public class Practice5 {
                         System.out.println(input_product_id + "번 물건은 " + (input_product_location + 1) + "번 저장 위치에 존재하지 않습니다.");
                     }
                 }
+
                 case ('s') -> {
                     for (int storage_row_idx = 0; storage_row_idx < product_storage.length; storage_row_idx++) {
                         System.out.println("물품 번호 " + storage_row_idx + "번의 재고상태");
@@ -45,7 +47,9 @@ public class Practice5 {
                         System.out.println();
                     }
                 }
+
                 case ('q') -> running_status = false;
+
                 default -> System.out.println("잘못된 입력입니다.");
             }
         }
