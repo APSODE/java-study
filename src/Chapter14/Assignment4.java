@@ -14,10 +14,10 @@ public class Assignment4 {
 }
 
 class Rectangle {
-    private static int rectange_instance_amount;
+    private static int rectangle_instance_amount;
 
     public static int rectCount() {
-        return rectange_instance_amount;
+        return rectangle_instance_amount;
     }
 
     private double width;
@@ -28,21 +28,21 @@ class Rectangle {
         this.width = 10;
         this.height = 10;
         this.start_point = new Point();
-        rectange_instance_amount++;
+        rectangle_instance_amount++;
     }
 
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
         this.start_point = new Point();
-        rectange_instance_amount++;
+        rectangle_instance_amount++;
     }
 
     public Rectangle(Point custom_start_point, double width, double height) {
         this.width = width;
         this.height = height;
         this.start_point = custom_start_point;
-        rectange_instance_amount++;
+        rectangle_instance_amount++;
     }
 
     public double getArea() {
