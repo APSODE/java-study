@@ -8,17 +8,13 @@ public class Assignment4 {
         System.out.println("Area of Rectangle 2 : " + secondRect.getArea());
         Rectangle thirdRect = new Rectangle(new Point(3, 3), 5, 6);
         System.out.println("Area of Rectangle 3 : " + thirdRect.getArea());
-        System.out.println("Total Number of Objects : " + Rectangle.rectCount());
+        System.out.println("Total Number of Objects : " + Rectangle.rectCount);
 
     }
 }
 
 class Rectangle {
-    private static int rectangle_instance_amount;
-
-    public static int rectCount() {
-        return rectangle_instance_amount;
-    }
+    public static int rectCount;
 
     private double width;
     private double height;
@@ -28,21 +24,21 @@ class Rectangle {
         this.width = 10;
         this.height = 10;
         this.start_point = new Point();
-        rectangle_instance_amount++;
+        rectCount++;
     }
 
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
         this.start_point = new Point();
-        rectangle_instance_amount++;
+        rectCount++;
     }
 
     public Rectangle(Point custom_start_point, double width, double height) {
         this.width = width;
         this.height = height;
         this.start_point = custom_start_point;
-        rectangle_instance_amount++;
+        rectCount++;
     }
 
     public double getArea() {
